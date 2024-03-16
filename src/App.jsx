@@ -1,15 +1,13 @@
 import './index.css'
-import { Line } from './components/home/Line'
-import { Navbar } from './components/Navbar'
-
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <div className="app-wrapper px-10">
-      <span className="bg-black text-2xl">Hi there, I&apos;m Irene.</span>
-      <Line/>
-      <Navbar/>
+      <main>
+        <Outlet/>
+      </main>
     </div>
   )
 }
