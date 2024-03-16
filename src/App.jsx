@@ -5,7 +5,7 @@ import { Navbar } from './components/Navbar'
 function App() {
 
   return (
-    <div className="app-wrapper px-10">
+    <div className="app-wrapper px-10 py-5">
       <Navbar/>
       <main>
         <Outlet/>
