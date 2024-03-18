@@ -5,7 +5,7 @@ import { Navbar } from './components/Navbar'
 function App() {
 
   return (
-    <div className="app-wrapper px-10 py-5">
+    <div className="app-wrapper px-[2%] py-5 flex flex-col justify-center min-h-screen">
       <Navbar/>
       <main>
         <Outlet/>

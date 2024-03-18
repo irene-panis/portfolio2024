@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const Navbar = () => {
   return (
-    <nav>
+    <nav className="h-[210px]">
       <Line/>
       <div className="flex gap-[25%]">
         <ul>
