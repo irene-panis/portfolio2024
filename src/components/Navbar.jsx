@@ -1,7 +1,21 @@
 import { Line } from "./home/Line"
 import { Link } from "react-router-dom"
+import { toggleMode } from "../utils/lightMode"
+import { useState } from "react"
 
 export const Navbar = () => {
+
+  const [mode, setMode] = useState('dark');
+
+  const handleToggle = () => {
+    if (mode === 'dark') {
+      setMode('light');
+    } else {
+      setMode('dark');
+    }
+    toggleMode();
+  }
+
   return (
     <nav className="home-cont">
       <Line/>
@@ -14,9 +28,12 @@ export const Navbar = () => {
           <li><Link to="/contact">contact</Link></li>
           <li><Link to="/resume">resume</Link></li>
         </ul>
-        <ul>
-          <li><Link to="/">light mode</Link></li>
-        </ul>
+        <button type="button" onClick={() => handleToggle()}>
+          { (mode === 'dark') ?
+            'light mode' :
+            'dark mode'
+          }
+        </button>
       </div>
     </nav>
   )
