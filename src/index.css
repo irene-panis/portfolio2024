@@ -8,3 +8,17 @@ html, body {
   color: #FFFFFF;
   font-family: "Familjen Grotesk", sans-serif;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(3rem, 1.886rem + 4.571vw, 6rem);
+  line-height: clamp(5.625rem, 5.277rem + 1.429vw, 6.563rem);
+}
+
+.home-cont {
+  height: clamp(11.25rem, 10.554rem + 2.857vw, 13.125rem);
+}
