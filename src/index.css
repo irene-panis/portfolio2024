@@ -5,11 +5,30 @@
 
 :root {
   --accent-d: #44AF69;
+  --accent-l: #823038;
+}
+
+.dark-mode {
+  background: linear-gradient(to bottom, #1a1c22, #16171b);
+  color: #F0F0F0;
+}
+
+.dark-mode-accent {
+  color: var(--accent-d);
+}
+
+.light-mode {
+  background: linear-gradient(to bottom, #E7D7C1, #ECE3D8);
+  color: #232323;
+}
+
+.light-mode-accent {
+  color: var(--accent-l);
 }
 
 html, body {
-  background-color: #232323;
-  color: #FFFFFF;
+  background: linear-gradient(to bottom, #1a1c22, #16171b);
+  color: #F0F0F0;
   font-family: "Familjen Grotesk", sans-serif;
 }
 
