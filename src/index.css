@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent-d: #44AF69;
+}
+
 html, body {
   background-color: #232323;
   color: #FFFFFF;
@@ -17,6 +21,8 @@ html, body {
 h1 {
   font-size: clamp(3rem, 1.886rem + 4.571vw, 6rem);
   line-height: clamp(5.625rem, 5.277rem + 1.429vw, 6.563rem);
+  color: var(--accent-d);
+  font-weight: bold;
 }
 
 .home-cont {
