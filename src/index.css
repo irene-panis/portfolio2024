@@ -38,11 +38,39 @@ html, body {
 }
 
 h1 {
-  font-size: clamp(3rem, 1.886rem + 4.571vw, 6rem);
-  line-height: clamp(5.625rem, 5.277rem + 1.429vw, 6.563rem);
+  font-size: clamp(2rem, 0.857rem + 5.714vw, 6rem);
+  line-height: clamp(1rem, 5.277rem + 1.429vw, 6.563rem);
   font-weight: 600;
+}
+
+.home-cont > h2 {
+  font-size: clamp(1.2rem, 0.829rem + 1.857vw, 2.5rem);
 }
 
 .home-cont {
   height: clamp(11.25rem, 10.554rem + 2.857vw, 13.125rem);
+}
+
+.home-desc {
+  width: clamp(200px, 100%, 800px);
+}
+
+.home-desc div {
+  font-size: clamp(1rem, 0.963rem + 0.152vw, 1.1rem);
+}
+
+@media screen and (min-width: 550px) {
+  .home-desc {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .home-desc br {
+    display: block;
+  }
+  .home-desc > h2 {
+    width: clamp(200px, 100%, 800px);
+  }
+  .home-desc div {
+    width: clamp(200px, 100%, 400px);;
+  }
 }
