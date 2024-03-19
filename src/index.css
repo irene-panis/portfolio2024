@@ -38,8 +38,8 @@ html, body {
 }
 
 h1 {
-  font-size: clamp(2rem, 0.857rem + 5.714vw, 6rem);
-  line-height: clamp(1rem, 5.277rem + 1.429vw, 6.563rem);
+  font-size: clamp(2.5rem, 1.5rem + 5vw, 6rem);
+  line-height: clamp(2rem, 0.696rem + 6.519vw, 6.563rem);
   font-weight: 600;
 }
 
