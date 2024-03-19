@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,7 +29,7 @@
 html, body {
   background: linear-gradient(to bottom, #1a1c22, #16171b);
   color: #F0F0F0;
-  font-family: "Familjen Grotesk", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 * {
@@ -40,7 +40,7 @@ html, body {
 h1 {
   font-size: clamp(3rem, 1.886rem + 4.571vw, 6rem);
   line-height: clamp(5.625rem, 5.277rem + 1.429vw, 6.563rem);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .home-cont {
