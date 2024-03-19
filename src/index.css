@@ -45,6 +45,7 @@ h1 {
 
 .home-cont > h2 {
   font-size: clamp(1.2rem, 0.829rem + 1.857vw, 2.5rem);
+  line-height: clamp(1.2rem, 0.624rem + 2.362vw, 2.75rem);
 }
 
 .home-cont {
