@@ -1,4 +1,3 @@
-import { Line } from "./home/Line"
 import { Link } from "react-router-dom"
 import { toggleMode } from "../utils/lightMode"
 import { useState } from "react"
@@ -18,7 +17,6 @@ export const Navbar = () => {
 
   return (
     <nav className="home-cont">
-      <Line/>
       <div className="flex gap-[25%]">
         <ul>
           <li><Link to="/">irene panis</Link></li>
