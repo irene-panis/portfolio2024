@@ -3,27 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --accent-d: #44AF69;
-  --accent-l: #823038;
-}
-
 .dark-mode {
-  background: linear-gradient(to bottom, #1a1c22, #16171b);
-  color: #F0F0F0;
-}
-
-.dark-mode-accent {
-  color: var(--accent-d);
+  background: #2C2C2C;
+  color: #E0E0E0;
 }
 
 .light-mode {
-  background: linear-gradient(to bottom, #E7D7C1, #ECE3D8);
+  background: #F5F5F5;
   color: #232323;
-}
-
-.light-mode-accent {
-  color: var(--accent-l);
 }
 
 html, body {
