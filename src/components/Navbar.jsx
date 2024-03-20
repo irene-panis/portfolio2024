@@ -19,19 +19,19 @@ export const Navbar = () => {
     <nav className="home-cont">
       <div className="flex gap-[25%]">
         <ul>
-          <li><Link to="/">irene panis</Link></li>
+          <li><Link to="/">Irene Panis</Link></li>
         </ul>
         <ul>
-          <li><Link to="/projects">work</Link></li>
-          <li><Link to="/resume">resume</Link></li>
+          <li><Link to="/projects">Work</Link></li>
+          <li><Link to="/resume">Resume</Link></li>
         </ul>
         <ul>
-          <li><Link to="/contact">contact</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
           <li>
             <button type="button" onClick={() => handleToggle()}>
               { (mode === 'dark') ?
-                'light mode' :
-                'dark mode'
+                '☀' :
+                '☁'
               }
             </button>
           </li>
