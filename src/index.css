@@ -9,7 +9,7 @@
 }
 
 .dark-mode {
-  background: linear-gradient(to bottom, #1a1c22, #16171b);
+  background-image: url("darkbg.jpg");
   color: #F0F0F0;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .light-mode {
-  background: linear-gradient(to bottom, #E7D7C1, #ECE3D8);
+  background-image: url("lightbg.jpg");
   color: #232323;
 }
 
