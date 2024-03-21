@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export const Navbar = () => {
 
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState('light');
 
   const handleToggle = () => {
     if (mode === 'dark') {
