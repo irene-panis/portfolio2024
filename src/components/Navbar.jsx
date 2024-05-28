@@ -4,12 +4,15 @@ import { useState } from "react"
 
 export const Navbar = () => {
 
-  const [mode, setMode] = useState('light');
+  const initialMode = localStorage.getItem("portfolio-mode") || "light";
+  const [mode, setMode] = useState(initialMode);
 
   const handleToggle = () => {
-    if (mode === 'dark') {
+    if (mode === 'dark') { // if dark change to light
+      localStorage.setItem("portfolio-mode", "light");
       setMode('light');
     } else {
+      localStorage.setItem("portfolio-mode", "dark");
       setMode('dark');
     }
     toggleMode();
@@ -17,9 +20,9 @@ export const Navbar = () => {
 
   return (
     <nav className="home-cont">
-      <div className="flex gap-[25%]">
+      <div className="flex gap-[25%] lowercase">
         <ul>
-          <li><Link to="/">Irene Panis</Link></li>
+          <li><Link to="/">Irene</Link></li>
         </ul>
         <ul>
           <li><Link to="/projects">Work</Link></li>
