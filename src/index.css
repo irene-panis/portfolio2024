@@ -4,13 +4,13 @@
 @tailwind utilities;
 
 .dark-mode {
-  background: #262626;
-  color: #e4e5df;
+  background: #3F292B;
+  color: #FDFDF3;
 }
 
 .light-mode {
-  background: #F5F5F5;
-  color: #232323;
+  background: #FDFDF3;
+  color: #E30213;
 }
 
 html, body {
