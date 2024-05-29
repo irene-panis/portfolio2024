@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import { toggleMode } from "../utils/lightMode"
-import { useState } from "react"
+import { updateMode } from "../utils/lightMode"
+import { useState, useEffect } from "react"
 
 export const Navbar = () => {
 
@@ -8,15 +8,14 @@ export const Navbar = () => {
   const [mode, setMode] = useState(initialMode);
 
   const handleToggle = () => {
-    if (mode === 'dark') { // if dark change to light
-      localStorage.setItem("portfolio-mode", "light");
-      setMode('light');
-    } else {
-      localStorage.setItem("portfolio-mode", "dark");
-      setMode('dark');
-    }
-    toggleMode();
+    const newMode = mode === 'dark' ? 'light' : 'dark';
+    localStorage.setItem("portfolio-mode", newMode);
+    setMode(newMode);
   }
+
+  useEffect(() => {
+    updateMode(mode);
+  }, [mode]);
 
   return (
     <nav className="home-cont">

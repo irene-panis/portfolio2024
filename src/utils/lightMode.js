@@ -1,18 +1,11 @@
 // toggleMode.js
-let darkMode = false;
-
-export function toggleMode() {
-  updateMode();
-  darkMode = !darkMode;
-}
-
-function updateMode() {
+export function updateMode(currentMode) {
   const appWrapper = document.querySelector('.app-wrapper');
 
-  if (darkMode) { // if dark mode, then add light mode classes
+  if (currentMode === 'light') {
     appWrapper.classList.add('light-mode');
     appWrapper.classList.remove('dark-mode');
-  } else { // light mode = add dark mode classes
+  } else { 
     appWrapper.classList.add('dark-mode');
     appWrapper.classList.remove('light-mode');
   }
