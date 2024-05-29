@@ -1,5 +1,8 @@
 import { updateMode } from "../utils/lightMode"
 import { useState, useEffect } from "react"
+import { ModeButton } from "./ModeButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
 
@@ -18,25 +21,26 @@ export const Navbar = () => {
 
   return (
     <nav className="home-cont">
-      <div className="flex gap-[25%] lowercase">
-        <ul>
-          <li><a href="#landing">Irene</a></li>
-        </ul>
-        <ul>
+      <div className="flex justify-between p-5 lowercase">
+        <ul className="nav-links flex flex-col">
           <li><a href="#projects">Work</a></li>
           <li><a href="#resume">Resume</a></li>
-        </ul>
-        <ul>
           <li><a href="#contact">Contact</a></li>
-          <li>
-            <button type="button" onClick={() => handleToggle()}>
-              { (mode === 'dark') ?
-                '☀' :
-                '☁'
-              }
-            </button>
-          </li>
+          <ModeButton
+            mode={mode}
+            onToggle={handleToggle}
+            screen="mobile-mode"
+          />
         </ul>
+        <h1><a href="#landing">Irene Panis</a></h1>
+        <FontAwesomeIcon
+          icon={faBars}
+        />
+        <ModeButton
+          mode={mode}
+          onToggle={handleToggle}
+          screen="desktop-mode"
+        />
       </div>
     </nav>
   )
