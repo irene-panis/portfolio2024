@@ -1,6 +1,6 @@
 import './index.css'
 import { Navbar } from './components/Navbar'
-import { Home } from './pages/Home';
+import { Landing } from './components/landing/Landing';
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <div className="app-wrapper bg-cover px-[2%] py-5 flex flex-col justify-center min-h-screen">
       <Navbar/>
       <main>
-        <Home/>
+        <Landing/>
       </main>
     </div>
   )

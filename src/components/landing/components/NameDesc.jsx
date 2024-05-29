@@ -4,7 +4,7 @@ import { Arrow } from "./Arrow"
 
 export const NameDesc = () => {
   return (
-    <div className="home-cont flex justify-evenly items-end">
+    <div className="home-cont flex flex-wrap-reverse">
       <Arrow/>
       <Description/>
       <Name/>
