@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { updateMode } from "../utils/lightMode"
 import { useState, useEffect } from "react"
 
@@ -21,14 +20,14 @@ export const Navbar = () => {
     <nav className="home-cont">
       <div className="flex gap-[25%] lowercase">
         <ul>
-          <li><Link to="/">Irene</Link></li>
+          <li><a href="#landing">Irene</a></li>
         </ul>
         <ul>
-          <li><Link to="/projects">Work</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
         <ul>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <button type="button" onClick={() => handleToggle()}>
               { (mode === 'dark') ?

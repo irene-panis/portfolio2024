@@ -1,6 +1,6 @@
 import './index.css'
-import { Outlet } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
+import { Home } from './pages/Home';
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <div className="app-wrapper bg-cover px-[2%] py-5 flex flex-col justify-center min-h-screen">
       <Navbar/>
       <main>
-        <Outlet/>
+        <Home/>
       </main>
     </div>
   )
