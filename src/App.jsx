@@ -1,6 +1,6 @@
 import './index.css'
-import { Navbar } from './components/Navbar'
-import { Landing } from './components/landing/Landing';
+import { Navbar } from './sections/Navbar'
+import { Landing } from './sections/landing/Landing';
 
 function App() {
 
