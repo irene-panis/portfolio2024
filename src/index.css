@@ -58,3 +58,28 @@ h1 {
   top: 1.75rem;
   right: 1.5rem;
 }
+
+main {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+
+.subheaders {
+  font-size: 0.8em;
+  font-family: "Noto Serif", serif;
+}
