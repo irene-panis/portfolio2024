@@ -54,6 +54,15 @@ h1 {
   font-size: 2em;
 }
 
+.showNav li,
+.mobile-mode {
+  background-color: var(--nav-text-color);
+  color: var(--nav-color);
+  border-radius: 30px;
+  width: 50%;
+  text-align: center;
+}
+
 .closeButton {
   position: absolute;
   top: 1.75rem;

@@ -23,8 +23,8 @@ export const Navbar = () => {
 
   return (
     <nav className="sticky p-5 h-[4rem]">
-      <div className="flex h-full justify-between lowercase items-center">
-        <ul className={`nav-links flex flex-col ${showNav ? `showNav` : ``}`}>
+      <div className="flex h-full justify-between lowercase items-center font-light">
+        <ul className={`nav-links flex flex-col uppercase ${showNav ? `showNav` : ``}`}>
           <li><a href="#work" onClick={() => setShowNav(false)}>Work</a></li>
           <li><a href="#resume" onClick={() => setShowNav(false)}>Resume</a></li>
           <ModeButton
