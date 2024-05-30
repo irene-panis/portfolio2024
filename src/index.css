@@ -160,4 +160,10 @@ section.main-cont {
   .mobile-mode {
     display: none;
   }
+  .work-intro {
+    padding: 0 10rem;
+  }
+  .tech-list {
+    font-size: 0.8em;
+  }
 }
