@@ -133,6 +133,9 @@ section.main-cont {
 }
 
 @media (min-width: 1024px) {
+  body {
+    font-size: 32px;
+  }
   .desktop-mode {
     display: block;
   }
