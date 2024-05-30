@@ -12,7 +12,7 @@ export const Project = ( {project, index} ) => {
         </div>
       </div>
       <div className="project-photo h-1/2 lg:h-full lg:w-1/2">
-        <img src={project.img} className="w-full h-full object-cover object-left"/>
+        <img src={project.img} className="w-full h-full object-cover object-left" alt={`${project.title} preview screenshot`}/>
       </div>
     </div>
   )
