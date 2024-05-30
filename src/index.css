@@ -16,6 +16,26 @@
   --nav-text-color: #FDFDF3;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-nav {
+  opacity: 0; 
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.fade-in-landing {
+  opacity: 0; 
+  animation: fadeIn 0.8s ease-in forwards;
+  animation-delay: 0.75s;
+}
+
 html, body {
   font-family: "DM sans", sans-serif;
   font-size: 16px;
@@ -47,9 +67,16 @@ h1 {
 
 .nav-links li {
   border: 1px solid;
-  border-color: --var(--nav-text-color);
+  border-color: var(--nav-color);
   border-radius: 30px;
   padding: 0.25rem 1rem;
+}
+
+.nav-links li:hover {
+  border-color: var(--nav-color);
+  background-color: var(--nav-color);
+  color: var(--nav-text-color);
+  transition: 0.1s ease-in-out;
 }
 
 .showNav {
@@ -131,6 +158,19 @@ section.main-cont {
 .footer-wrapper {
   background-color: var(--nav-color);
   color: var(--nav-text-color);
+}
+
+.work-intro a:hover,
+.footer-wrapper a:hover {
+  background-color: var(--nav-text-color);
+  color: var(--nav-color);
+  transition: 0.1s ease-in-out;
+}
+
+.project a:hover {
+  background-color: var(--nav-color);
+  color: var(--nav-text-color);
+  transition: 0.1s ease-in-out;
 }
 
 @media (min-width: 768px) {
