@@ -3,6 +3,7 @@ import { Navbar } from './sections/Navbar'
 import { Landing } from './sections/landing/Landing';
 import { Work } from './sections/work/Work';
 import { Resume } from './sections/resume/Resume';
+import { Footer } from './sections/Footer';
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
         <Work/>
         <Resume/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )
 }

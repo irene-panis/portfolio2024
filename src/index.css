@@ -104,3 +104,8 @@ section.main-cont {
   padding: 0.25rem 0.75rem;
   border-radius: 10px;
 }
+
+.footer-wrapper {
+  background-color: var(--nav-color);
+  color: var(--nav-text-color);
+}
