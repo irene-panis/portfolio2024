@@ -1,4 +1,4 @@
-[
+export const projects = [
   {
     title: 'Think Thieves',
     description: `Reimagining of the 100 Thieves website with a focus on their esports sector. Web scrapers and API calls are used in tandem to grab the latest information about upcoming matches and who's currently live.`,
