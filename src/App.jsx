@@ -2,6 +2,7 @@ import './index.css'
 import { Navbar } from './sections/Navbar'
 import { Landing } from './sections/landing/Landing';
 import { Work } from './sections/work/Work';
+import { Resume } from './sections/resume/Resume';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <main>
         <Landing/>
         <Work/>
+        <Resume/>
       </main>
     </div>
   )
