@@ -4,7 +4,7 @@ import { projects } from "../../utils/projectData";
 
 export const Work = () => {
   return (
-    <section id="work" className="flex flex-col items-center gap-4">
+    <section id="work" className="flex flex-col items-center">
       <Tech/>
       {
       projects.map((project, index) => (
