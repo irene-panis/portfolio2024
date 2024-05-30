@@ -26,3 +26,23 @@ html, body {
 .nav-links {
   display: none;
 }
+
+.showNav {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
