@@ -1,7 +1,7 @@
 
 export const Landing = () => {
   return (
-    <section id="landing" className="flex flex-col justify-center items-center gap-4 landing fade-in-landing">
+    <section id="landing" className="flex flex-col justify-center items-center gap-4 landing">
       <h2 className="lg:max-w-[50%]">Full-stack Software Engineer</h2>
       <img src="/avatar.png" height="200" width="200"/>
       <div className="subheaders uppercase lg:flex lg:justify-between text-center px-8 lg:min-w-[50%]">

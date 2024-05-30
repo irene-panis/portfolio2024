@@ -35,7 +35,7 @@ export const Navbar = () => {
 
   return (
     <nav className="sticky p-5 h-[4rem]">
-      <div className="navbar h-full lowercase font-light fade-in-nav">
+      <div className="navbar h-full lowercase font-light">
         <ul className={`nav-links uppercase lg:flex lg:gap-4 ${showNav ? `showNav` : ``}`}>
           <li><a href="#work" onClick={() => setShowNav(false)}>Work</a></li>
           <li><a href="#resume" onClick={() => setShowNav(false)}>Resume</a></li>
