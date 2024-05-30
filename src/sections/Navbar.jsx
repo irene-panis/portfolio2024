@@ -27,7 +27,6 @@ export const Navbar = () => {
         <ul className={`nav-links flex flex-col ${showNav ? `showNav` : ``}`}>
           <li><a href="#work" onClick={() => setShowNav(false)}>Work</a></li>
           <li><a href="#resume" onClick={() => setShowNav(false)}>Resume</a></li>
-          <li><a href="#contact" onClick={() => setShowNav(false)}>Contact</a></li>
           <ModeButton
             mode={mode}
             onToggle={handleToggle}
