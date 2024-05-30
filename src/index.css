@@ -132,6 +132,12 @@ section.main-cont {
   color: var(--nav-text-color);
 }
 
+@media (min-width: 768px) {
+  body {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     font-size: 32px;
