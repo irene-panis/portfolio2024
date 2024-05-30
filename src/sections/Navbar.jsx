@@ -21,10 +21,22 @@ export const Navbar = () => {
 
   const [showNav, setShowNav] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setShowNav(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <nav className="sticky p-5 h-[4rem]">
-      <div className="flex h-full justify-between lowercase items-center font-light">
-        <ul className={`nav-links flex flex-col uppercase ${showNav ? `showNav` : ``}`}>
+      <div className="navbar h-full lowercase font-light">
+        <ul className={`nav-links uppercase lg:flex lg:gap-4 ${showNav ? `showNav` : ``}`}>
           <li><a href="#work" onClick={() => setShowNav(false)}>Work</a></li>
           <li><a href="#resume" onClick={() => setShowNav(false)}>Resume</a></li>
           <ModeButton
@@ -41,6 +53,7 @@ export const Navbar = () => {
         <h1><a href="#landing">Irene Panis</a></h1>
         <FontAwesomeIcon
           icon={faBars}
+          className="hamburger-menu"
           onClick={() => setShowNav(true)}
         />
         <ModeButton
