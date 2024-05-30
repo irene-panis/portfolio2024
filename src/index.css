@@ -6,11 +6,15 @@
 .dark-mode {
   background: #3F292B;
   color: #FDFDF3;
+  --nav-color: #FDFDF3;
+  --nav-text-color: #3F292B;
 }
 
 .light-mode {
   background: #FDFDF3;
   color: #E30213;
+  --nav-color: #E30213;
+  --nav-text-color: #FDFDF3;
 }
 
 html, body {
@@ -34,7 +38,8 @@ html, body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: var(--nav-color);
+  color: var(--nav-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +48,6 @@ html, body {
 
 .closeButton {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 1.25rem;
+  right: 1.25rem;
 }
