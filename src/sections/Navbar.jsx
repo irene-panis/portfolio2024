@@ -22,8 +22,8 @@ export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <nav className="sticky">
-      <div className="flex justify-between p-5 lowercase items-center">
+    <nav className="sticky p-5 h-[4rem]">
+      <div className="flex h-full justify-between lowercase items-center">
         <ul className={`nav-links flex flex-col ${showNav ? `showNav` : ``}`}>
           <li><a href="#projects">Work</a></li>
           <li><a href="#resume">Resume</a></li>

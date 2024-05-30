@@ -24,6 +24,7 @@ html, body {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -68,6 +69,10 @@ main {
 
 section {
   flex: 1;
+}
+
+.landing {
+  min-height: calc(100vh - 4rem - 16px);
 }
 
 h2 {

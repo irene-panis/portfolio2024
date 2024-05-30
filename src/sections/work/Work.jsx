@@ -1,7 +1,7 @@
 
-export const Landing = () => {
+export const Work = () => {
   return (
-    <section id="landing" className="flex flex-col justify-center items-center gap-4 landing main-cont">
+    <section id="landing" className="flex flex-col justify-center items-center gap-4 main-cont">
       <h2>Full-stack Software Engineer</h2>
       <img src="/avatar.png" height="200" width="200"/>
       <div className="subheaders uppercase text-center px-8">
