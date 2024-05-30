@@ -25,9 +25,9 @@ export const Navbar = () => {
     <nav className="sticky p-5 h-[4rem]">
       <div className="flex h-full justify-between lowercase items-center">
         <ul className={`nav-links flex flex-col ${showNav ? `showNav` : ``}`}>
-          <li><a href="#projects">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#work" onClick={() => setShowNav(false)}>Work</a></li>
+          <li><a href="#resume" onClick={() => setShowNav(false)}>Resume</a></li>
+          <li><a href="#contact" onClick={() => setShowNav(false)}>Contact</a></li>
           <ModeButton
             mode={mode}
             onToggle={handleToggle}
