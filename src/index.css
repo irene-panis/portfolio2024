@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Duke Charming";
+  src: url("/Duke Charming.otf");
+}
+
 .dark-mode {
   background: #3F292B;
   color: #FDFDF3;
@@ -125,17 +130,16 @@ section {
 }
 
 h2 {
-  text-transform: uppercase;
-  font-size: 3em;
-  line-height: 1;
-  font-weight: bold;
-  font-family: "Kanit", sans-serif;
+  font-size: 3.5em;
+  line-height: 0.7;
+  font-family: "Duke Charming", serif;
   text-align: center;
 }
 
 .subheaders {
-  font-size: 0.7em;
+  font-size: 0.65em;
   font-family: "Noto Serif", serif;
+  font-weight: 600;
 }
 
 section.main-cont {
