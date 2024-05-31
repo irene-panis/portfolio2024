@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export const Project = ( {project, index} ) => {
   return (
-    <div className={`project h-screen w-full flex flex-col ${ index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8`}>
+    <div className={`project h-screen w-full flex flex-col ${ index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
       <div className="project-info p-10 flex flex-col gap-2 justify-center h-1/2 lg:h-full lg:w-1/2">
         <p className="text-[2em] font-bold">0{index}.</p>
         <p>{project.title}</p>
